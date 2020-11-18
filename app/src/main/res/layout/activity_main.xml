@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearFormulario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextRUT"
+            android:paddingTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="RUT..." />
+        <EditText
+            android:id="@+id/editTextNOMBRE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName"
+            android:hint="NOMBRE..."/>
+
+        <EditText
+            android:id="@+id/editTextAPELLIDO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="5dp"
+            android:inputType="textPersonName"
+            android:hint="APELLIDO..."    />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/LinearBTNs"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/BTNGuardar"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="213dp"
+            android:text="GUARDAR" />
+
+        <Button
+            android:id="@+id/BTNModificar"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="213dp"
+            android:layout_marginEnd="10dp"
+            android:text="MODIFICAR"></Button>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/LinearBTNs2"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/BTNBuscar"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="213dp"
+            android:text="BUSCAR"></Button>
+
+        <Button
+            android:id="@+id/BTNEliminar"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="213dp"
+            android:layout_marginEnd="10dp"
+            android:text="ELIMINAR"></Button>
+
+    </RelativeLayout>
+<ListView
+    android:id="@+id/listViewPersonas"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
